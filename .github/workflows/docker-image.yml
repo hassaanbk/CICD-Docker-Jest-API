@@ -27,5 +27,5 @@ jobs:
         REPOSITORY: lab-3
         IMAGE_TAG: latest
       run: |
-        docker build -t hassaanbk/lab-3:latest .
-        docker push hassaanbk/lab-3 
+        docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+        docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
