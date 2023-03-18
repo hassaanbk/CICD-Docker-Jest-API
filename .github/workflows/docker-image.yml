@@ -27,5 +27,5 @@ jobs:
         REPOSITORY: lab-3
         IMAGE_TAG: latest
       run: 
-        docker build --file Dockerfile --tag $REGISTRY/$RESPOSITORY ./
+        docker build -t $REGISTRY/$RESPOSITORY ./
         docker push $REGISTRY/$RESPOSITORY
