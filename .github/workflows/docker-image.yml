@@ -26,6 +26,6 @@ jobs:
         REGISTRY: ${{ secrets.DOCKER_USERNAME }}
         REPOSITORY: lab-3
         IMAGE_TAG: latest
-      run: 
+      run: |
         docker build -t hassaanbk/lab-3:latest .
         docker push hassaanbk/lab-3 
