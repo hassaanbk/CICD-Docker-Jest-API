@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/healthy", (req, res) => {
-    res.json('healthy');
+    return res.status(200).json({data:'healthy'});
 })
 
 app.listen(port, (req, res) => {

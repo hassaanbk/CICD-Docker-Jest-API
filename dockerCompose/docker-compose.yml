@@ -4,5 +4,5 @@ services:
   api:
     image: hassaanbk/lab-3:latest
     ports: 
-      - 4001:4000
+      - 4000:4000
 
