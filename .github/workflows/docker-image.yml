@@ -24,8 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run Unit Test
-      run: npm run test
+    
         
     - name: Build the Docker image
       env:
@@ -35,3 +34,6 @@ jobs:
       run: |
         docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
         docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+
+    - name: Run Unit Test
+      run: npm run test
